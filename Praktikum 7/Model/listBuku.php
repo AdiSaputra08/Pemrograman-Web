@@ -3,92 +3,131 @@
 require_once "Buku.php";
 require_once "Database/Database.php";
 
-class ListBuku{
+class listBuku {
 
-public function getData(){
-    $db = new Database();
-    $koneksi = $db->getKoneksi();
+    public function getData() {
+        $db = new Database();
+        $koneksi = $db->getkoneksi();
 
-    $sql = "SELECT * FROM buku";
+        if ($koneksi->connect_error) {
+            die("Koneksi gagal: " . $koneksi->connect_error);
+        }
 
-    $query = $koneksi->query($sql);
+        $sql = "SELECT * FROM buku";
+        $query = $koneksi->query($sql);
 
-    $daftar_buku = [];
+        $daftar_buku = [];
 
-    if($query->num_rows > 0){
-        while($row = $query->fetch_assoc()){
-            $buku = new Buku($row['judul'], $row['pengarang'], $row['penerbit'], $row['tahun']);
-            $buku->setId($row['id']);
-            array_push($daftar_buku, $buku);
+        if ($query->num_rows > 0) {
+            while ($row = $query->fetch_assoc()) {
+                $judul = $row['Judul'] ?? 'Unknown Title';
+                $pengarang = $row['Pengarang'] ?? 'Unknown Author';
+                $penerbit = $row['Penerbit'] ?? 'Unknown Publisher';
+                $tahun = $row['Tahun'] ?? 'Unknown Year';
+                $id = $row['ID'] ?? 0;
+
+                $buku = new Buku($judul, $pengarang, $penerbit, $tahun);
+                $buku->setId($id);
+                $daftar_buku[] = $buku;
+            }
+        }
+        return $daftar_buku;
+    }
+
+    public function getKolomTabel() {
+        return array('ID', 'Judul', 'Pengarang', 'Penerbit', 'Tahun', 'Ubah');
+    }
+
+    public function simpan($buku) {
+        $db = new Database();
+        $koneksi = $db->getKoneksi();
+
+        if ($koneksi->connect_error) {
+            die("Koneksi gagal: " . $koneksi->connect_error);
+        }
+
+        $sql = "INSERT INTO buku (judul, pengarang, penerbit, tahun) VALUES (?, ?, ?, ?)";
+        $stmt = $koneksi->prepare($sql);
+        $stmt->bind_param("ssss", $buku->getJudul(), $buku->getPengarang(), $buku->getPenerbit(), $buku->getTahun());
+
+        if ($stmt->execute()) {
+            return "Data berhasil disimpan!";
+        } else {
+            return "Gagal menyimpan data: " . $stmt->error;
         }
     }
 
-    return $daftar_buku;
-}
+    public function hapus($id) {
+        $db = new Database();
+        $koneksi = $db->getKoneksi();
 
-public function getKolomTabel(){
-    return array('No', 'Judul', 'Pengarang', 'Penerbit', 'Tahun', 'Aksi');
-}
+        if ($koneksi->connect_error) {
+            die("Koneksi gagal: " . $koneksi->connect_error);
+        }
 
-public function simpan($buku){
-    $db = new Database();
-    $koneksi = $db->getKoneksi();
+        if (!empty($id) && is_numeric($id)) {
+            $sql = "DELETE FROM buku WHERE id = ?";
+            $stmt = $koneksi->prepare($sql);
+            $stmt->bind_param("i", $id);
 
-    $sql = "INSERT INTO buku VALUES ('".$buku->getJudul()."', '".$buku->getPengarang()."', '".$buku->getPenerbit()."', '".$buku->getTahun()."')";
-
-    $query = $koneksi->query($sql);
-
-    return $query;  
-}
-
-public function hapus($id){
-    $db = new Database();
-    $koneksi = $db->getKoneksi();
-    $sql = "DELETE FROM buku where id = " . $id;
-    
-    $query = $koneksi->query($sql);
-
-    return $query;
-}
-
-public function update($buku){
-    $db = new Database();
-    $koneksi = $db->getKoneksi();
-    $sql = "UPDATE buku SET judul='".$buku->getJudul()."', pengarang='".
-    $buku->getPengarang()."'penerbit='".$buku->getPenerbit()."', tahun='".
-    $buku->getTahun()."' WHERE id = '".$buku->getId()."'";
-
-    $query = $koneksi->query($sql);
-    return $query;
-}
-public function getBukuById($id){
-    $db = new Database();
-    $koneksi = $db->getKoneksi();
-
-    $sql = "SELECT * FROM buku WHERE id=" . $id;
-
-    $query = $koneksi->query($sql);
-
-    if($query->num_rows>0){
-        $data = $query->fetch_assoc();
-
-        $buku = new Buku($data['judul'],  $data['pengarang'], $data['penerbit'], $data['tahun']);
-        $buku->setId($data['id']);
-
-        return $buku;
+            if ($stmt->execute()) {
+                return "Data berhasil dihapus!";
+            } else {
+                return "Gagal menghapus data: " . $stmt->error;
+            }
+        } else {
+            return "ID tidak valid untuk menghapus buku.";
+        }
     }
-    return false;
+
+    public function update($buku) {
+        $db = new Database();
+        $koneksi = $db->getKoneksi();
+
+        if ($koneksi->connect_error) {
+            die("Koneksi gagal: " . $koneksi->connect_error);
+        }
+
+        $sql = "UPDATE buku SET judul = ?, pengarang = ?, penerbit = ?, tahun = ? WHERE id = ?";
+        $stmt = $koneksi->prepare($sql);
+        $stmt->bind_param("ssssi", $buku->getJudul(), $buku->getPengarang(), $buku->getPenerbit(), $buku->getTahun(), $buku->getId());
+
+        if ($stmt->execute()) {
+            return "Data berhasil diperbarui!";
+        } else {
+            return "Gagal memperbarui data: " . $stmt->error;
+        }
+    }
+
+    public function getBukuById($id) {
+        $db = new Database();
+        $koneksi = $db->getKoneksi();
+
+        if ($koneksi->connect_error) {
+            die("Koneksi gagal: " . $koneksi->connect_error);
+        }
+
+        $sql = "SELECT * FROM buku WHERE id = ?";
+        $stmt = $koneksi->prepare($sql);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows > 0) {
+            $data = $result->fetch_assoc();
+
+            $judul = $data['judul'] ?? 'Unknown Title';
+            $pengarang = $data['pengarang'] ?? 'Unknown Author';
+            $penerbit = $data['penerbit'] ?? 'Unknown Publisher';
+            $tahun = $data['tahun'] ?? 'Unknown Year';
+            $id = $data['id'] ?? 0;
+
+            $buku = new Buku($judul, $pengarang, $penerbit, $tahun);
+            $buku->setId($id);
+
+            return $buku;
+        }
+
+        return false; // Kembalikan false jika tidak ada data
+    }
 }
-
-
-}
-
-
-//database: perpustakaan
-//table: buku
-//          id int (11) primary key auto increment,
-//          judul varchar (150),
-//          pengarang varchar (150),
-//          penerbit varchar (150),
-//          tahun int (5)
- 
