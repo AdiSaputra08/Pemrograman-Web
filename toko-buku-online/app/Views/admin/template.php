@@ -29,7 +29,7 @@
                         <a href="<?=base_url('admin/daftar-buku')?>" class="">Daftar-Buku</a>
                     </li>
                     <li>
-                        <a href="<?=base_url('admin/transaksi')?>" class="">Transaksi</a>
+                        <a href="<?=base_url('admin/transaksi')?>" class="">transaksi</a>
                     </li>
                     <li>
                         <a href="<?=base_url('admin/pelanggan')?>" class="">Pelanggan</a>
@@ -43,7 +43,7 @@
     </div>
     <footer class="bg-succes text text-white py-3 text">
         <div class="container">
-            Coopyright 2024,  toko buku online kelas B Adi Saputra, All right reserved
+            Coopyright 2024,  toko buku online kelas B, All right reserved
         </div>
     </footer>
     <?= $this->renderSection('main') ?>

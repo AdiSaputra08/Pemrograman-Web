@@ -13,11 +13,33 @@ class AdminController extends BaseController
     }
     public function daftarbuku()
     {
-        return view('admin/daftar-buku');
+        $modelBuku = model('BookModel');
+        $data['books'] = $modelBuku->findAll();
+
+        return view('admin/daftar-buku', $data);
     }
     public function daftarbukuTambah()
     {
         return view('admin/daftar-buku-tambah');
+    }
+    public function createBuku(){
+        $data = $this->request->getPost();
+        $file = $this->request->getFile('cover');
+
+        if(!$file->hasMoved()){
+            $path = $file->store();
+            $data['cover'] = $path;
+        }
+
+        $bukuModel = model('BookModel');
+
+        if($bukuModel->insert($data, false)){
+            return redirect()->to('admin/daftar-buku')->with('sukses', 'data berhasil disimpan');
+        }else{
+            return redirect()->to('admin/daftar-buku')->with('eror', 'data gagal disimpan');
+        }
+
+        $bukuModel->save($data);
     }
     public function daftarbukuEdit()
     {
@@ -46,5 +68,9 @@ class AdminController extends BaseController
     public function pelangganHapus()
     {
         return view('admin/pelanggan-hapus');
+    }
+
+    public function image($folder, $file){
+        return $this->response->download(WRITEPATH . 'uploads/' . $folder . '/' . $file, null);
     }
 }

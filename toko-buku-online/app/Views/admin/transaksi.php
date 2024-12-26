@@ -8,27 +8,27 @@
         <thead>
             <tr>
                 <th scope="cul">#</th>
-                <th scope="cul">Nama pelanggan</th>
-                <th scope="cul">Tanggal</th>
-                <th scope="cul">Total</th>
-                <th scope="cul">Status</th>
-                <th scope="cul">Aksi</th>
+                <th scope="cul">nama pelanggan</th>
+                <th scope="cul">tanggal</th>
+                <th scope="cul">total</th>
+                <th scope="cul">status</th>
+                <th scope="cul">aksi</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th scope="row">1</th>
                 <td>Adi Saputra</td>
-                <td>11 Desember 2024 14.06 WIB</td>
-                <td>Rp.100.000</td>
+                <td>9 Desember 2024 09.35 WIB</td>
+                <td>Rp.250.000</td>
                 <td>
-                    <span class="badge bg-warning">Proses</span>
+                    <span class="badge bg-warning">pending</span>
                 </td>
                 <td>
                     <a href="<?= base_url('admin/transaksi/ubah-status')?>" class="btn
                     btn-success">Ubah Status</a>
                     <a href="<?= base_url('admin/transaksi/hapus')?>" class="btn
-                    btn-danger">Hapus</a>
+                    btn-danger">hapus</a>
                 </td>
             </tr>
         </tbody>

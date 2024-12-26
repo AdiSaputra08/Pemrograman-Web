@@ -18,7 +18,7 @@
   </div>
   <footer class="bg-succes text text-white py-3 text">
         <div class="container">
-            Coopyright 2024,  toko buku online kelas B Adi Saputra, All right reserved
+            Coopyright 2024,  toko buku online kelas B, All right reserved
         </div>
     </footer>
   <body>

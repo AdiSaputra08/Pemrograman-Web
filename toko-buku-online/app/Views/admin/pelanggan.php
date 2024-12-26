@@ -1,16 +1,16 @@
 <?= $this->extend('admin/template');?>
 
 <?= $this->section('main');?>
-<h2 class="mb-5">Pelanggan</h2>
+<h2 class="mb-5">pelanggan</h2>
 <div class="mb-5">
     <table class="table table-stripped">
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nama</th>
-                <th scope="col">No hp</th>
-                <th scope="col">Alamat</th>
-                <th scope="col">Aksi</th>
+                <th scope="col">nama</th>
+                <th scope="col">no hp</th>
+                <th scope="col">alamat</th>
+                <th scope="col">aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -18,10 +18,10 @@
                 <th scope="row">1</th>
                 <th scope="row">Adi Saputra</th>
                 <th scope="row">082298698393</th>
-                <th scope="row">Jambi</th>
+                <th scope="row">Rimbo Bujang</th>
                 <th scope="row">
                     <a href="<?= base_url('admin/pelanggan/hapus')?>" class="btn 
-                    btn-danger">Hapus</a>
+                    btn-danger">hapus</a>
                 </th>
             </tr>
         </tbody>

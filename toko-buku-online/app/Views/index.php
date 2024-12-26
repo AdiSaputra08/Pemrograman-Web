@@ -23,7 +23,7 @@
                 <div class="col-6 p-5">
                     <h1>Selamat datang Di Toko buku Online</h1>
                     <p>Kami Menyediakan Buku-Buku dari Berbagai penerbit Nasional</p>
-                    <a href="#1" class="btn btn-succes">Lihat Produk</a>
+                    <a href="#" class="btn btn-success">Lihat Produk</a>
                 </div>
                 <div class="col-6 p-5">
                     <h1>Temukan Buku Favorite Anda</h1>
@@ -50,86 +50,90 @@
             <div class="row mb-5 g-3">
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
-            <div class="col-3"><img src="<?= base_url('images/buku1.jpg') ?>" class="card-img-top" alt="...">
+            <div class="col-3"><img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
-                      <p class="card-text">Rp. 100.000,-</p>
+                      <h5 class="card-title">Maaf</h5>
+                      <p class="card-text">Rp. 85.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             </div>
-            <footer class="footer py-3">
-            <div class="container footer">Copyright 2024. Toko Buku Online Kelas B Adi Saputra. All Rights Reserved.</div>
-            </footer>
+            <footer class="bg-success text text-white py-3 text text-center mt-5">
+      <div class="container">
+        Copyright 2024. Toko Buku Online Kelas 3B ADI SAPUTRA. All Rights Reserved
+      </div>
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
