@@ -50,78 +50,78 @@
             <div class="row mb-5 g-3">
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                <img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+                <img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>
             </div>
-            <div class="col-3"><img src="<?= base_url('images/buku aku kalah aku merindukan mu.png') ?>" class="card-img-top" alt="...">
+            <div class="col-3"><img src="<?= base_url('images/coding.jpg') ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Maaf</h5>
-                      <p class="card-text">Rp. 85.000,-</p>
+                      <h5 class="card-title">Belajar Coding Itu Penting</h5>
+                      <p class="card-text">Rp. 95.000,-</p>
                       <a href="#" class="btn btn-primary">add to chart</a>
                     </div>
                   </div>

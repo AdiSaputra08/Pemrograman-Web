@@ -27,11 +27,11 @@
                 <div class="row p-3 bg-danger-subtle g-3">
                     <div class="row">
                     <div class="col-4">
-                        <img src="<?= base_url ('images/buku aku kalah aku merindukan mu.png')?>"alt="" style="width: 200px; height: auto">
+                        <img src="<?= base_url ('images/coding.jpg')?>"alt="" style="width: 200px; height: auto">
                     </div>
                     <div class="col-4 d-flex flex-column justify-content-center">
-                        <span><h5>Maaf</h5></span>
-                        <p>85,000,-</p>
+                        <span><h5>Belajar Coding Itu Penting</h5></span>
+                        <p>95,000,-</p>
                     </div>
                     <div class="col 1 d-flex flex-column justify-content-center">
                         <span>1</span>
@@ -46,11 +46,11 @@
                 <div class="row p-3 bg-danger-subtle g-3">
                     <div class="row">
                     <div class="col-4">
-                        <img src="<?= base_url ('images/buku aku kalah aku merindukan mu.png')?>"alt="" style="width: 200px; height: auto">
+                        <img src="<?= base_url ('images/coding.jpg')?>"alt="" style="width: 200px; height: auto">
                     </div>
                     <div class="col-4 d-flex flex-column justify-content-center">
-                        <span><h5>Maaf</h5></span>
-                        <p>85,000,-</p>
+                        <span><h5>Belajar Coding Itu Penting</h5></span>
+                        <p>95,000,-</p>
                     </div>
                     <div class="col 1 d-flex flex-column justify-content-center">
                         <span>1</span>
@@ -65,11 +65,11 @@
                 <div class="row p-3 bg-danger-subtle g-3">
                     <div class="row">
                     <div class="col-4">
-                        <img src="<?= base_url ('images/buku aku kalah aku merindukan mu.png')?>"alt="" style="width: 200px; height: auto">
+                        <img src="<?= base_url ('images/coding.jpg')?>"alt="" style="width: 200px; height: auto">
                     </div>
                     <div class="col-4 d-flex flex-column justify-content-center">
-                        <span><h5>Maaf</h5></span>
-                        <p>85,000,-</p>
+                        <span><h5>Belajar Coding Itu Penting</h5></span>
+                        <p>95,000,-</p>
                     </div>
                     <div class="col 1 d-flex flex-column justify-content-center">
                         <span>1</span>
@@ -84,11 +84,11 @@
                 <div class="row p-3 bg-danger-subtle g-3">
                     <div class="row">
                     <div class="col-4">
-                        <img src="<?= base_url ('images/buku aku kalah aku merindukan mu.png')?>"alt="" style="width: 200px; height: auto">
+                        <img src="<?= base_url ('images/coding.jpg')?>"alt="" style="width: 200px; height: auto">
                     </div>
                     <div class="col-4 d-flex flex-column justify-content-center">
-                        <span><h5>Maaf</h5></span>
-                        <p>85,000,-</p>
+                        <span><h5>Belajar Coding Itu Penting</h5></span>
+                        <p>95,000,-</p>
                     </div>
                     <div class="col 1 d-flex flex-column justify-content-center">
                         <span>1</span>
@@ -103,11 +103,11 @@
                 <div class="row p-3 bg-danger-subtle g-3">
                     <div class="row">
                     <div class="col-4">
-                        <img src="<?= base_url ('images/buku aku kalah aku merindukan mu.png')?>"alt="" style="width: 200px; height: auto">
+                        <img src="<?= base_url ('images/coding.jpg')?>"alt="" style="width: 200px; height: auto">
                     </div>
                     <div class="col-4 d-flex flex-column justify-content-center">
-                        <span><h5>Maaf</h5></span>
-                        <p>85,000,-</p>
+                        <span><h5>Belajar Coding Itu Penting</h5></span>
+                        <p>95,000,-</p>
                     </div>
                     <div class="col 1 d-flex flex-column justify-content-center">
                         <span>1</span>
